@@ -1,10 +1,28 @@
+:root {
+  --dark-red: rgba(128, 15, 47, 1);
+  --bright-crimson: rgb(201, 24, 74);
+  --rose-pink: rgb(255, 143, 163);
+  --light-rose: rgb(255, 179, 193);
+  --light-pink: rgb(255, 204, 213);
+  --soft-pink: rgb(255, 240, 243);
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos para el contenedor de la calculadora */
 .calculator-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
-  padding: 50px;
+  width: 100vw;
+  background-color: #171616;
+  padding: 1rem;
+  margin: 0;
 }
 
 /* Estilos para la calculadora en sí */
@@ -12,13 +30,15 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  background-color: #f3f3f3; /* Fondo plateado */
-  border: 2px solid #cccccc; /* Borde plateado */
+  background-color: #f3f3f3;
+  /* Fondo plateado */
+  border: 2px solid #cccccc;
+  /* Borde plateado */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 600px;
+  min-height: 600px;
   width: 100%;
   height: 100%;
 }
@@ -26,61 +46,44 @@
 /* Estilos para la pantalla de la calculadora */
 .screen {
   grid-column: span 1;
-  height: 60px;
-  width: 580px;
-  font-size: 28px;
+  height: 10%;
+  width: 100%;
+  font-size: 2rem;
   text-align: right;
-  padding: 10px;
+  padding: 1.8rem;
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: #333;
+  cursor: pointer;
 }
 
-/* Estilos para los botones de la calculadora con efecto de brillo */
-.button {
-  position: relative;
-  width: 25%;
-  height: 80px;
-  font-size: 24px;
-  background-image: linear-gradient(90deg, #eaeaea, #f2f2f2, #eaeaea); /* Gradiente plateado brillante */
-  color: #333; /* Texto en color oscuro */
-  border: 2px solid #cccccc; /* Borde plateado */
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: background-position 0.5s ease-in-out;
-  background-size: 200% 100%;
-  background-position: 100% 0;
-}
+
 
 /* Estilos para el botón de igual (=) */
 .button.equal {
-  background-image: linear-gradient(90deg, #1ec5d5, #32bac6, #cad2d9);
+  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
 }
 
 /* Estilos para el botón de borrar (C) */
 .button.clear {
-  background-image: linear-gradient(90deg, #1ec5d5, #32bac6, #cad2d9);
+  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
 }
 
 /* Estilos para los botones numéricos */
 .button.number {
-  background-image: linear-gradient(90deg, #1ec5d5, #32bac6, #cad2d9);
+  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
 }
 
 /* Estilos para los botones de operadores */
 .button.operator {
-  background-image: linear-gradient(90deg, #1ec5d5, #32bac6, #cad2d9);
+  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
 }
 
 /* Estilos para el botón de porcentaje (%) */
 .button.percentage {
-  background-image: linear-gradient(90deg, #1ec5d5, #32bac6, #cad2d9);
+  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
 }
 
 /* Pseudo-clase hover para el efecto de brillo */
@@ -93,14 +96,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 /* Estilos para los contenedores de números y operadores */
-.number-buttons,
-.operator-buttons {
+.number-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1.3rem;
   justify-content: center;
+}
+
+/* Estilos para los botones de la calculadora con efecto de brillo */
+.button {
+  position: relative;
+  width: 8rem;
+  height: 4rem;
+  border: 2px solid #cccccc;
+  /* Borde plateado */
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-position 0.7s ease-in-out;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  border: 1px;
+  padding: 1em 1em;
+  box-shadow: var(--light-pink) 1px 0px 10px 3px;
+}
+
+button:hover {
+  box-shadow: #333;
+  transform: scale(1.1);
 }
