@@ -6,10 +6,36 @@
   --light-pink: rgb(255, 204, 213);
   --soft-pink: rgb(255, 240, 243);
 
+  --color-1: rgb(60, 9, 108);
+  --color-2: rgb(123, 44, 191);
+  --color-3: rgb(199, 125, 255);
+
+  --color-4: rgb(0, 52, 89);
+  --color-5: rgb(0, 126, 167);
+  --color-6: rgb(0, 168, 232);
+
+  --color-7: rgb(141, 153, 174);
+  --color-8: rgb(141, 153, 174);
+  --color-9: rgb(237, 242, 244);
+
+  --color-10: rgb(27, 67, 50);
+  --color-11: rgb(82, 183, 136);
+  --color-12: rgb(149, 213, 178);
+  
+  --color-13: rgb(181, 131, 141);
+  --color-14: rgb(229, 152, 155);
+  --color-15: rgb(255, 205, 178);
+
+  --color-16: rgb(230, 57, 70);
+  --color-17: rgb(241, 250, 238);
+  --color-18: rgb(168, 218, 220);
+  --color-19: rgb(69, 123, 157);
+
 }
 
 * {
   box-sizing: border-box;
+  
 }
 
 /* Estilos para el contenedor de la calculadora */
@@ -59,32 +85,67 @@
   cursor: pointer;
 }
 
-
-
-/* Estilos para el botón de igual (=) */
-.button.equal {
-  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
+.button.equal.theme1 , .button.clear.theme1, .button.number.theme1, .button.operator.theme1, .button.percentage.theme1 {
+  background-image: linear-gradient(-45deg, var(--dark-red) 13%,  var(--bright-crimson) 29%, var(--rose-pink) 46%, var(--bright-crimson) 61%, var(--dark-red)  78%, var(--rose-pink) 100%);
+  box-shadow: var(--light-pink) 1px 0px 10px 3px;
+}
+.button.equal.theme2 , .button.clear.theme2, .button.number.theme2, .button.operator.theme2, .button.percentage.theme2 {
+  background: linear-gradient(45deg, var(--color-1) 20%, var(--color-2) 40%, var(--color-3) 60%, var(--color-2) 80%, var(--color-1) 100%);
+  box-shadow: var(--color-3) 1px 0px 10px 3px;
 }
 
-/* Estilos para el botón de borrar (C) */
-.button.clear {
-  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
+.button.equal.theme3 , .button.clear.theme3, .button.number.theme3, .button.operator.theme3, .button.percentage.theme3 {
+  background-image: linear-gradient(135deg, var(--color-4) 0%, var(--color-5) 20%, var(--color-6) 40%, var(--color-5) 60%, var(--color-4) 80%);
+  box-shadow: var(--color-6) 1px 0px 10px 3px;
 }
 
-/* Estilos para los botones numéricos */
-.button.number {
-  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
+.button.equal.theme4 , .button.clear.theme4, .button.number.theme4, .button.operator.theme4, .button.percentage.theme4 {
+  background-image: linear-gradient(90deg,  var(--color-7),  var(--color-8),  var(--color-9));
+  box-shadow: var(--color-9) 1px 0px 10px 3px;
+}
+.button.equal.theme5 , .button.clear.theme5, .button.number.theme5, .button.operator.theme5, .button.percentage.theme5 {
+  background-image: linear-gradient(
+    45deg,
+    var(--color-10) 0%,
+    var(--color-11) 20%,
+    var(--color-12) 40%,
+    var(--color-10) 60%,
+    var(--color-11) 80%,
+    var(--color-12) 100%
+  );
+  box-shadow: var(--color-12) 1px 0px 10px 3px;
+}
+.button.equal.theme6,
+.button.clear.theme6,
+.button.number.theme6,
+.button.operator.theme6,
+.button.percentage.theme6 {
+  background-image: linear-gradient(
+    to right,
+    var(--color-13) 0%,
+    var(--color-14) 25%,
+    var(--color-15) 50%,
+    var(--color-14) 75%,
+    var(--color-13) 100%
+  );
+  box-shadow: var(--color-15) 1px 0px 10px 3px;
+}
+.button.equal.theme7,
+.button.clear.theme7,
+.button.number.theme7,
+.button.operator.theme7,
+.button.percentage.theme7 {
+  background-image: linear-gradient(
+    to right,
+    var(--color-16) 0%,
+    var(--color-17) 25%,
+    var(--color-18) 50%,
+    var(--color-17) 75%,
+    var(--color-19) 100%
+  );
+  box-shadow: var(--color-19) 1px 0px 10px 3px;
 }
 
-/* Estilos para los botones de operadores */
-.button.operator {
-  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
-}
-
-/* Estilos para el botón de porcentaje (%) */
-.button.percentage {
-  background-image: linear-gradient(90deg, var(--dark-red), var(--bright-crimson), var(--rose-pink));
-}
 
 /* Pseudo-clase hover para el efecto de brillo */
 .button:hover {
@@ -114,7 +175,6 @@
   width: 8rem;
   height: 4rem;
   border: 2px solid #cccccc;
-  /* Borde plateado */
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -125,10 +185,28 @@
   background-position: 100% 0;
   border: 1px;
   padding: 1em 1em;
-  box-shadow: var(--light-pink) 1px 0px 10px 3px;
+ 
 }
 
 button:hover {
   box-shadow: #333;
   transform: scale(1.1);
+}
+
+/* Tema 2 */
+.theme2 .button {
+  background: linear-gradient(to bottom, var(--color-1), var(--color-2));
+  color: white;
+}
+
+/* Tema 3 */
+.theme3 .button {
+  background: linear-gradient(to bottom, var(--color-1), var(--color-2));
+  color: white;
+}
+
+/* Tema 4 */
+.theme4 .button {
+  background: linear-gradient(to bottom, var(--color-1), var(--color-2));
+  color: white;
 }
