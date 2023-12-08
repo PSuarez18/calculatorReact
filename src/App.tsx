@@ -7,7 +7,7 @@ function App() {
   const [currentValue, setCurrentValue] = useState('0');
   const [prevValue, setPrevValue] = useState<string | null>(null);
   const [operator, setOperator] = useState<string | null>(null);
-  const [currentTheme, setCurrentTheme] = useState<string>("theme1");
+  const [currentTheme, setCurrentTheme] = useState<string>("theme6");
 
   const numberButtonClick = (valueNumber: string) => {
     if (currentValue === '0' || currentValue === 'Error' || currentValue === '') {
