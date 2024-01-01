@@ -38,7 +38,7 @@ To run the calculator in your browser, follow these steps:
 2. **Clone:** Clone this repository to your local machine.
 
    ```
-   git clone https://github.com/your-username/calculator-app.git
+   git clone https://github.com/PSuarez18/calculatorReact.git
    ```
 
 3. **Navigate:** Open your terminal and navigate to the project's root directory.
@@ -100,7 +100,7 @@ Para ejecutar la calculadora en tu navegador, sigue estos pasos:
 2. **Clonar:** Clona este repositorio en tu máquina local.
 
    ```
-   git clone https://github.com/tu-nombre/aplicacion-de-calculadora.git
+   git clone https://github.com/PSuarez18/calculatorReact.git
    ```
 
 3. **Navegar:** Abre tu terminal y navega hasta el directorio raíz del proyecto.
