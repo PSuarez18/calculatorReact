@@ -2,7 +2,7 @@
 
 <div align="center">
   <p>A simple calculator application built with React, TypeScript, and Vite. This application allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and percentage calculations.</p>
-  <img src="src/assets/localhost_5173_.png" alt="calculator img">
+  <img src="src/assets/localhost_5173_.png" width="200" height="300" alt="calculator img">
 </div>
 
 ## Features
@@ -26,7 +26,8 @@
    - Type numbers (0-9) to input numeric values.
    - Use the keyboard operators (+, -, \*, /) to perform operations.
    - Press Enter to calculate the result.
-   - Press Esc to clear the calculator.
+   - Press Esc/Detele to clear the calculator.
+7. Experiment with different themes and button colors using the dynamic theme changer.
 
 ## How to Run
 
@@ -87,7 +88,8 @@ To run the calculator in your browser, follow these steps:
    - Escribe números (0-9) para ingresar valores numéricos.
    - Utiliza los operadores del teclado (+, -, \*, /) para realizar operaciones.
    - Presiona Enter para calcular el resultado.
-   - Presiona Esc para borrar la calculadora.
+   - Presiona Esc/Delete para borrar la calculadora.
+7. Experimenta con diferentes temas y colores de botones usando el cambiador de temas dinámico.
 
 ## Cómo Ejecutar
 
@@ -119,4 +121,5 @@ Para ejecutar la calculadora en tu navegador, sigue estos pasos:
 
 <div align="center">
   <sub>Creado con ❤️ por [PaoloDev](https://github.com/PSuarez18)</sub>
+  
 </div>
