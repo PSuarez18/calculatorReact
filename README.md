@@ -2,6 +2,7 @@
 
 <div align="center">
   <p>A simple calculator application built with React, TypeScript, and Vite. This application allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and percentage calculations.</p>
+  <img src="src/assets/localhost_5173_.png" alt="calculator img">
 </div>
 
 ## Features
