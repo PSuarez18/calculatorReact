@@ -208,3 +208,23 @@ button:hover {
   background: linear-gradient(to bottom, var(--color-1), var(--color-2));
   color: white;
 }
+
+/* Estilos responsive solo para los botones más pequeños en dispositivos pequeños */
+@media (max-width: 501px) {
+  .screen {
+    
+    padding: 0.5rem;
+    
+  }
+  .button {
+    height: 8vh;
+    width: 25%;
+  }
+  .calculator-container{
+    height: 10%;
+  }
+  .calculator {
+    grid-template-rows: 1fr;
+    width: 80vh;
+  }
+}
